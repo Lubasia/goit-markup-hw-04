@@ -188,7 +188,7 @@ ul {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../svg/img.jpg);
+    url(../images/svg/img.jpg);
 }
 .hero-container {
   text-align: center;
@@ -272,16 +272,16 @@ ul {
   margin-bottom: 30px;
 }
 .antena::before {
-  background-image: url(../svg/antenna.svg);
+  background-image: url(../images/svg/antenna.svg);
 }
 .clock::before {
-  background-image: url(../svg/clock.svg);
+  background-image: url(../images/svg/clock.svg);
 }
 .diagram::before {
-  background-image: url(../svg/diagram.svg);
+  background-image: url(../images/svg/diagram.svg);
 }
 .astronaut::before {
-  background-image: url(../svg/astronaut.svg);
+  background-image: url(../images/svg/astronaut.svg);
 }
 .text-advantages {
   color: var(--secondary-font-color);
