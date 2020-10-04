@@ -46,15 +46,10 @@ ul {
 .logo-link:focus,
 .contact-link-white-theme:hover,
 .contact-link-white-theme:focus,
-.contact-link-black-theme:hover,
-.contact-link-black-theme:focus,
-.address-link-black-theme:hover,
-.address-link-black-theme:focus,
 .link-button:hover,
 .link-button:focus,
 .nav-button:hover,
 .nav-button:focus,
-.nav-button:active,
 .gallery-progect:hover,
 .gallery-progect:focus {
   color: var(--link-color);
@@ -143,6 +138,7 @@ ul {
 /*  Контакты  */
 .address {
   display: flex;
+  align-items: flex-end;
   font-style: normal;
   margin-left: auto;
 }
@@ -152,8 +148,9 @@ ul {
   margin-right: 10px;
   fill: var(--secondary-font-color);
 }
-.icon-mail:hover,
-.icon-mail:focus {
+
+.contact-link-white-theme:hover .icon-mail,
+.contact-link-white-theme:focus .icon-mail {
   fill: var(--link-color);
 }
 .icon-phone {
@@ -162,8 +159,8 @@ ul {
   width: 10px;
   fill: var(--secondary-font-color);
 }
-.icon-phone:hover,
-.icon-phone:focus {
+.contact-link-white-theme:hover .icon-phone,
+.contact-link-white-theme:focus .icon-phone {
   fill: var(--link-color);
 }
 .contact-link-white-theme + .contact-link-white-theme {
@@ -210,8 +207,11 @@ ul {
 
 .link-button {
   color: var(--font-on-dakr-theme);
+  padding: 0;
+  margin: 0;
   width: 200px;
   height: 50px;
+  border: 1px solid var(--link-color);
   border-radius: 4px;
   background-color: var(--link-color);
   font-family: var(--main-font);
@@ -287,7 +287,7 @@ ul {
   color: var(--secondary-font-color);
   font-family: var(--main-font);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -320,7 +320,6 @@ ul {
 .team-list {
   display: flex;
   flex-direction: column;
-
   background-color: var(--font-on-dakr-theme);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -367,7 +366,7 @@ ul {
 .social-team:focus {
   background-color: var(--link-color);
 }
-.social-team:not(:last-child) {
+.social-list:not(:last-child) {
   margin-right: 10px;
 }
 .icon-cocial {
@@ -375,8 +374,8 @@ ul {
   width: 20px;
   fill: #afb1b8;
 }
-.icon-cocial:hover,
-.icon-cocial:focus {
+.social-team:hover .icon-cocial,
+.social-team:focus .icon-cocial {
   fill: var(--font-on-dakr-theme);
 }
 /* Конец Команда */
@@ -390,7 +389,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-.client-item:not(:last-child) {
+.client-list:not(:last-child) {
   margin-right: 30px;
 }
 .client-item {
@@ -403,13 +402,14 @@ ul {
   width: 170px;
 }
 .client-item:hover,
-.client-item:focus,
-.link-client:hover,
-.link-client:focus {
+.client-item:focus {
   border: 1px solid var(--link-color);
+}
+.client-item:hover .link-client,
+.client-item:focus .link-client {
   fill: var(--link-color);
 }
-.icon-client {
+.link-client {
   fill: #afb1b8;
 }
 
@@ -467,7 +467,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.social-link:not(:last-child) {
+.enjoy-list:not(:last-child) {
   margin-right: 10px;
 }
 .dark-link {
